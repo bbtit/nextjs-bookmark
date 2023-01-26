@@ -22,4 +22,4 @@ services:
       - 5432:5432
 # データの永続化
 volumes:
-  postgres: 
+  postgres:
