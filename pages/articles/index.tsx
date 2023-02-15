@@ -1,8 +1,14 @@
 import { GetStaticProps } from 'next';
 import prisma from '../../lib/prisma';
 import Router from 'next/router';
+import { ArticleProps } from '../../types/Article';
 
-const Articles = (props) => {
+type Props = {
+  articles: ArticleProps[];
+};
+
+// ここで、porps の型を指定しています
+const Articles = (props: Props) => {
   return (
     <div className='container mx-auto'>
       <div className='mt-10 w-full px-8'>
